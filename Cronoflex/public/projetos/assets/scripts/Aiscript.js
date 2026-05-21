@@ -28,6 +28,8 @@ let captureElement = document.getElementById("CronoContent");
 let choresList = document.createElement('ul');
 
 function createButton() {
+      /* VAR é um uso inapropriado em javascript por possuir regras de escopo antigas e confusas, podendo causar bugs acidentais. O ideal é utilizar let ou const
+    O var não respeita escopos menores, vazando dados e podendo causar reescritas indetectáveis */
   var button = document.getElementById("SeeChores");
 
   if (!button) {

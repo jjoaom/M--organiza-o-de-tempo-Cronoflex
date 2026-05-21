@@ -1,4 +1,6 @@
 document.getElementById('showPassword').addEventListener('change', function () {
+    /* VAR é um uso inapropriado em javascript por possuir regras de escopo antigas e confusas, podendo causar bugs acidentais. O ideal é utilizar let ou const
+    O var não respeita escopos menores, vazando dados e podendo causar reescritas indetectáveis */
     var passwordInput = document.getElementById('senha');
     passwordInput.type = this.checked ? 'text' : 'password';
 });
@@ -6,6 +8,8 @@ document.getElementById('showPassword').addEventListener('change', function () {
 document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
+    /* VAR é um uso inapropriado em javascript por possuir regras de escopo antigas e confusas, podendo causar bugs acidentais. O ideal é utilizar let ou const
+O var não respeita escopos menores, vazando dados e podendo causar reescritas indetectáveis */
     var username = document.getElementById('usuario').value;
     var password = document.getElementById('senha').value;
 
@@ -27,6 +31,8 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 });
 
 function displayErrorPopup(errorMessage) {
+        /* VAR é um uso inapropriado em javascript por possuir regras de escopo antigas e confusas, podendo causar bugs acidentais. O ideal é utilizar let ou const
+    O var não respeita escopos menores, vazando dados e podendo causar reescritas indetectáveis */
     var popup = document.getElementById('popup');
     var popupContent = document.getElementById('popup-content');
     var closePopup = document.getElementById('close-popup');
