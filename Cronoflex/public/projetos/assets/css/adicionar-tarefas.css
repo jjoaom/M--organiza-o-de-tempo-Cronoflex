@@ -116,6 +116,10 @@ form {
     form {
         width: 90%;
     }
+/*
+Declaração duplicada de #botoes button pode interferir na leitura do CSS, que é realizada em forma de cascata. Além de tornar o código mais difícil de realizar manutenção, se houver seletores identicos pode causar conflito na exibição da interface.
+
+*/
 
     #botoes button {
         margin-bottom: 1rem;
