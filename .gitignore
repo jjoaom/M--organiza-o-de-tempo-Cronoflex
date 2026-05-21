@@ -1,1 +1,4 @@
 desktop.ini
+
+# Melhoria no gitignore visto que esse aborda apenas um arquivo aleatório de configuração de área de trabalho do windows
+# Recomendo inserir .vscode para não subir configurações pessoais do vscode dos programadores
