@@ -1,6 +1,6 @@
 # CronoFlex
 O CronoFlex é um serviço que busca auxiliar na má organização de tempo do usuário, incentivando-o a criar e seguir uma rotina com dicas e diferentes metodologias e funcionalidades. 
-
+<!--  Documentação do README.md está incompleta, eu adicionaria descrição da Stack completa, badges, instruções de como rodar a aplicação e documentação que foi criada para a documentação -->
 ## Alunos integrantes da equipe
 
 * João Victor dos Santos Nogueira
