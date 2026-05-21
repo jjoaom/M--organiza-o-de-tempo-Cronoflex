@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function obterID() {
+        /* Indicado utilizar Number.parseint por possuir mais benefícios de código. 
+        ECMA Script 2015 introduziu métodos estaticos no construtor Number, tornando-o mais consistente, organizado e alinhado as praticas modernas de engenharia de software. Ao user o Number ao invés de chamadas globais, reduzimos o risco de de conflitos de nomeclatura.        */
         let id = parseInt(localStorage.getItem("id")) || 0;
         id += 1;
         localStorage.setItem("id", id);
