@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 tarefas = tarefas.filter(tarefa => tarefa.frequencia === "mensal");
             }
         }
-
+        /* Ideal trocar para um loop for of que é simplificado e utiliza do iterador do javascript */
         for (let i = 0; i < tarefas.length; i++) {
             const tarefa = tarefas[i];
 
