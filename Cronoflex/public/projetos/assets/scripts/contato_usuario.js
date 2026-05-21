@@ -12,6 +12,8 @@ function loadData() {
     tbody.innerHTML = ''; // Limpa o conteúdo da tabela
 
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
+    /* Prefira utilizar o acesso condicional opcional pois ele não gera erros caso algum valor seja null ou undefined. Além disso, ele também melhora a leitura do código
+    Exemplo: if(user?.contatos) */
     if (user && user.contatos) {
         user.contatos.forEach((item, index) => {
             const row = document.createElement('tr');
