@@ -20,6 +20,7 @@ document.getElementById('Form').addEventListener('submit', function (event) {
     // Obtém os dados do usuário logado do localStorage
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
 
+    // User id não está sendo utilizado pelo código e deve ser removido para melhorar manutenibilidade e leitura
     if (user && user.id) {
         const userId = user.id;
         const contato = { nome, email, assunto, mensagem };
