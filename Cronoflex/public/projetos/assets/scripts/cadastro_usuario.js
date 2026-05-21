@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mostrarSenhasCheckbox = document.getElementById('mostrarSenhas');
     const senhaInput = document.getElementById('senha');
     const confirmarSenhaInput = document.getElementById('confirmarSenha');
-
+    /* Essa função deveria ficar fora do addEventListener, no topo do arquivo. Funções aninhadas causam perca de processamento e memória, especialmente em códigos que são chamados o tempo inteiro. */
     function applyPhoneMask(event) {
         let input = event.target;
         input.value = input.value.replace(/\D/g, '');
