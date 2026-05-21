@@ -1,4 +1,5 @@
 //Criando o cliente
+/* O cliente está estático, o ideal seria esse cliente sendo passado por meio de um atributo, aproveitando o próposito apresentado da aplicação no readme.md */
 const cliente = {
   id: 1,
   nome: "ClienteTeste",
