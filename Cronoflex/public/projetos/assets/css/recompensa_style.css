@@ -71,7 +71,7 @@ footer {
     text-align: center;
     margin-top: 180px;
 }
-
+/* A tag P1 não existe no HTML, sugiro remove-lá visto que não está sendo utilizada ou alterada para tipo classe ou id*/
 p1 {
     color: #353636;
     font-weight: bold;
