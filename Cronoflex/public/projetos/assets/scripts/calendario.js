@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             day.addEventListener("click", (e) => {
                 const dataSelecionada = e.currentTarget.getAttribute("data-date");
+                /* As boas práticas de javascript recomendam utilizar a tag .dataset ao invés de getAttribute() por ter uma semantica melhorada, consistencia de código e conversão automatica
+                const dataSelecionada = e.dataset.data-date;
+                */
                 window.location.href = `adicionar-tarefas.html?date=${dataSelecionada}`;
             });
         });
