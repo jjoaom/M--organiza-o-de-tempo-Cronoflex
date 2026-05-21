@@ -213,7 +213,8 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+/* Propriedade PADDING duplicada, isso pode causar dificuldade na manutenibilidade e leitura do código
+Também recomendo utilizar melhor distribuição de classes e refatoração para diminuir o tamanho dos arquivos CSS*/
 #tarefas button {
     padding: 5px;
     background-color: rgba(113, 201, 236, 255);
