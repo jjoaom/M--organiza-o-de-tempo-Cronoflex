@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!usuario) {
         alert('Nenhum usuário autenticado encontrado.');
+        /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
         window.location.href = '../login/login.html';
         return;
     }
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 /* As boas práticas de javascript recomendam utilizar a tag .dataset ao invés de getAttribute() por ter uma semantica melhorada, consistencia de código e conversão automatica
                 const dataSelecionada = e.dataset.data-date;
                 */
+               /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
                 window.location.href = `adicionar-tarefas.html?date=${dataSelecionada}`;
             });
         });

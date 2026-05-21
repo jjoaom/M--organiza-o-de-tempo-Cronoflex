@@ -17,7 +17,7 @@ function visualizarTarefa(){
     frequenciaInput.value = (tarefa.frequencia).charAt(0).toUpperCase() + tarefa.frequencia.slice(1);
     prioridadeInput.value = (tarefa.prioridade).charAt(0).toUpperCase() + tarefa.prioridade.slice(1);
 }
-
+/* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
 window.addEventListener("load", () => {
     visualizarTarefa();
 });

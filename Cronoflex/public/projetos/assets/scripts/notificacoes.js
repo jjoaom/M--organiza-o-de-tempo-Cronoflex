@@ -89,6 +89,7 @@ function concluirtarefa(linha){
     tarefas[indiceTarefa].resultado = tarefas[indiceTarefa].concluida ? 'concluiu' : 'não concluiu';
 
     localStorage.setItem("tarefas", JSON.stringify(tarefas));
+    /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
     window.location.reload();
 }
 

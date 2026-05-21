@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const tarefaInput = document.querySelector("#tarefa");
     const inicioInput = document.querySelector("#inicio");
     const finalInput = document.querySelector("#final");
-
+    /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
     const urlParams = new URLSearchParams(window.location.search);
     const dataSelecionada = urlParams.get('date');
 
@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         localStorage.setItem("tarefas", JSON.stringify(tarefas));
 
         form.reset();
+        /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
         window.location.href = "calendario.html";
     }
 

@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
         alert('Cadastro concluído com sucesso!');
+        /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
         window.location.href = '../login/login.html';
     });
 });

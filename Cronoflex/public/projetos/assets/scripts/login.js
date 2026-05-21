@@ -23,6 +23,7 @@ O var não respeita escopos menores, vazando dados e podendo causar reescritas i
     if (usuarioAutenticado) {
         console.log('Usuário autenticado:', usuarioAutenticado);
         localStorage.setItem('loggedInUser', JSON.stringify(usuarioAutenticado));
+        /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
         window.location.href = '../descricao/description.html';
     } else {
         console.error('Usuário ou senha incorretos.');
@@ -44,7 +45,7 @@ function displayErrorPopup(errorMessage) {
     closePopup.onclick = function () {
         popup.style.display = 'none';
     };
-
+    /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
     window.onclick = function (event) {
         if (event.target == popup) {
             popup.style.display = 'none';

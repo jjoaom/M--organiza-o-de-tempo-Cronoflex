@@ -34,6 +34,7 @@ document.getElementById('Form').addEventListener('submit', function (event) {
         updateUsuarios(user);
 
         alert('Contato cadastrado com sucesso!');
+        /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
         window.location.href = 'contato_user.html';
     } else {
         console.error('Nenhum usuário logado encontrado no localStorage.');

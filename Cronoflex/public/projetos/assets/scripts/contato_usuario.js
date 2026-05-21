@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadData();
 
     document.getElementById('add-new').addEventListener('click', function () {
+        /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
         window.location.href = 'cadastro_contato_user.html';
     });
 });
@@ -32,7 +33,7 @@ function loadData() {
         console.error('Nenhum contato encontrado para o usuário logado.');
     }
 }
-
+/* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
 window.deleteData = function (index) {
     let user = JSON.parse(localStorage.getItem('loggedInUser'));
     user.contatos.splice(index, 1);
@@ -41,7 +42,7 @@ window.deleteData = function (index) {
 
     loadData();
 }
-
+/* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
 window.editData = function (index) {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
     const item = user.contatos[index];

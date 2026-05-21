@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!usuario) {
     alert('Nenhum usuário autenticado encontrado.');
+    /* window é deprecado e voltado somente para browsers. O ideal é utilizar o atributo globalThis por ser a maneira universal de acessar objetos por todo o ambiente javascript. */
     window.location.href = '../login/login.html';
     return;
   }
